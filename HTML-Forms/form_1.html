@@ -1,61 +1,63 @@
 <html>
+
 <head>
-<title>Form 1</title>
+    <title>Form 1</title>
 </head>
+
 <body>
-<div>
-<form align="center">
+    <div>
+        <form align="center">
+            <div>
+                <h1><u>Student Data Entry Form</u></h1>
+            </div>
 
-<div>
-<h1><u>Student Data Entry Form</u></h1>
-</div>
+            <div>
+                <label for="name">Student Name:-</label>
+                <input type="text" id="name" placeholder="Enter Your name" autofocus><br><br>
+            </div>
 
-<div>
-<label for="name">Student Name:-</label>
-<input type="text" id="name" placeholder="Enter Your name" autofocus><br><br>
-</div>
+            <div>
+                <label for="mail">Email Id:-</label>
+                <input type="email" id="mail" placeholder="Enter Your Email Id"><br><br>
+            </div>
 
-<div>
-<label for="mail">Email Id:-</label>
-<input type="email" id="mail" placeholder="Enter Your Email Id"><br><br>
-</div>
+            <div>
+                <label for="gender">Gender:-</label>
+                <input type="radio" id="gender" value="gender" name="boy">BOY
+                <input type="radio" id="gender" value="gender" name="girl">GIRL<br><br>
+            </div>
 
-<div>
-<label for="gender">Gender:-</label>
-<input type="radio" id="gender" value="gender" name="boy">BOY
-<input type="radio" id="gender" value="gender" name="girl">GIRL<br><br>
-</div>
+            <div>
+                <label for="subject">Subject:-</label>
+                <input type="checkbox" id="subject" name="tamil">Tamil
+                <input type="checkbox" id="subject" name="telugu">Telugu
+                <input type="checkbox" id="subject" name="gujrati">Gujrati
+                <input type="checkbox" id="subject" name="english">English
+                <input type="checkbox" id="subject" name="Marathi">Marathi
+                <input type="checkbox" id="subject" name="hindi">Hindi<br><br>
+            </div>
 
-<div>
-<label for="subject">Subject:-</label>
-<input type="checkbox" id="subject" name="tamil">Tamil
-<input type="checkbox" id="subject" name="telugu">Telugu
-<input type="checkbox" id="subject" name="gujrati">Gujrati
-<input type="checkbox" id="subject" name="english">English
-<input type="checkbox" id="subject" name="Marathi">Marathi
-<input type="checkbox" id="subject" name="hindi">Hindi<br><br>
-</div>
+            <div>
+                <label for="city/Town">City/Town</label>
+                <select name="dropdown">
+                    <option value="-----">------------</option>
+                    <option value="mathura">Mathura</option>
+                    <option value="madhurai">Madhurai</option>
+                </select><br><br>
+            </div>
 
-<div>
-<label for="city/Town">City/Town</label>
-<select name="dropdown">
-<option value="-----">------------</option>
-<option value="mathura">Mathura</option>
-<option value="madhurai">Madhurai</option>
-</select><br><br>
-</div>
+            <div>
+                <label for="comments" left>Comments....</label><br>
+                <textarea cols="30" rows="5" id="comments"></textarea><br><br>
+            </div>
 
-<div>
-<label for="comments" left>Comments....</label><br>
-<textarea cols="30" rows="5" id="comments"></textarea><br><br>
-</div>
+            <div>
+                <input type="reset" value="Clear">
+                <input type="submit" value="submit"><br><br>
+            </div>
 
-<div>
-<input type="reset" value="Clear">
-<input type="submit" value="submit"><br><br>
-</div>
-
-</form>
-</div>
+        </form>
+    </div>
 </body>
+
 </html>
