@@ -1,0 +1,237 @@
+<html>
+
+<head>
+    <title>Page Layout</title>
+    <style>
+        body {
+            background-color: #ffa339;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        #nav {
+            border: 2px solid black;
+            height: 70px;
+            width: 100vw;
+            color: white;
+            font-weight: bolder;
+            font-size: large;
+            display: flex;
+            list-style: none;
+            position: fixed;
+            justify-content: right;
+            background-color: #0f2a3d;
+            z-index: 1;
+            top: 0;
+        }
+
+        .first {
+            margin: 15px;
+            padding: 8px;
+        }
+
+        .first:hover {
+            background-color: #98b9f2;
+            color: blue;
+            font-weight: bolder;
+        }
+
+
+        #box {
+            display: flex;
+        }
+
+        .box1 {
+            overflow: auto;
+            border: 2px solid black;
+            width: 40vw;
+            height: 70vh;
+            margin-top: 25vh;
+            margin-left: 7%;
+            border-radius: 7px;
+            text-align: center;
+            background-color: #a08070;
+            color: #ffefce;
+            font-weight: bolder;
+
+        }
+
+        .box2 {
+            overflow: auto;
+            border: 2px solid black;
+            width: 40vw;
+            height: 70vh;
+            margin-top: 25vh;
+            margin-left: 5%;
+            border-radius: 7px;
+            text-align: center;
+            background-color: #a08070;
+            color: #ffefce;
+            font-weight: bolder;
+        }
+
+        #box h2 {
+            color: #f9f7fc;
+            background-color: #6a381f;
+            padding: 20px 0px 20px 4%;
+
+
+        }
+
+        #box h2:hover {
+            color: brown;
+            background-color: ffefce;
+            font-weight: bold;
+        }
+
+
+
+        .logo {
+            display: flex;
+            justify-content: right;
+
+        }
+
+        img {
+            right: 10px;
+            top: 450px;
+            border: 2px solid #3e6680;
+            border-radius: 100%;
+            position: fixed;
+            height: 70px;
+        }
+
+        .box3 {
+            margin: 10vh;
+            border: 2px solid black;
+            border-radius: 25px;
+            color: wheat;
+            background-color: #272727;
+
+        }
+
+        h1 {
+            padding: 20px 0px 20px 35%;
+
+        }
+
+        h1:hover {
+            text-shadow: 4px 2px 1px black;
+            background-color: #b84600;
+            color: white;
+            font-weight: bold;
+            border-radius: 23px;
+
+        }
+
+        #fotter {
+            display: flex;
+            border: 2px solid black;
+            height: 70px;
+            width: 100vw;
+            color: white;
+            font-weight: bolder;
+            font-size: large;
+            list-style: none;
+            background-color: #0f2a3d;
+            justify-content: center;
+        }
+
+        .last {
+            margin: 15px;
+            padding: 8px;
+        }
+
+        .last:hover {
+            background-color: #98b9f2;
+            color: blue;
+            font-weight: bolder;
+        }
+    </style>
+</head>
+
+<body>
+    <div>
+        <nav>
+            <ul id="nav">
+                <li class="first">Home</li>
+                <li class="first">User</li>
+                <li class="first">Search</li>
+                <li class="first">About</li>
+            </ul>
+        </nav>
+    </div>
+
+    <div class="logo">
+        <img src="https://logopond.com/logos/f769ca74308454b8105edd767151818e.png" />
+    </div>
+    <div id="box">
+        <div class="box1">
+            <h2>The Enchanted Forest</h2>
+            <br />In the heart of the sprawling wilderness, where the shadows dance
+            with the light and the whispers of ancient trees echo through the air,
+            lies an enchanted forest unlike any other. Its canopy, adorned with
+            emerald leaves that shimmer in the gentle breeze, casts a spell of
+            wonder upon all who dare to venture within its depths. As the morning
+            sun peeks through the thick foliage, illuminating the forest floor with
+            its golden rays, a symphony of life awakens. Birds sing melodies of joy,
+            while small creatures scurry about, their tiny footprints leaving traces
+            in the dew-kissed grass.The air is alive with the scent of wildflowers
+            and pine, mingling with the earthy aroma of moss-covered stones. Every
+            breath is a treasure, filled with the essence of nature's embrace.
+            Wandering deeper into the forest, one discovers secrets hidden amidst
+            the ancient trees. Each gnarled trunk tells a story of centuries past,
+            whispering tales of magic and mystery. Time seems to stand still in this
+            enchanted realm, where the past and present intertwine in a dance of
+            eternal beauty. Moss-covered pathways wind their way through the
+            undergrowth, leading travelers to hidden glades and sparkling streams.
+            Fairies flit among the ferns, their laughter like tinkling bells that
+            dance upon the wind. The very air thrums with energy, alive with the
+            pulse of the forest's heartbeat.
+        </div>
+
+        <div class="box2">
+            <h2>The Enchanted Forest</h2>
+            <br />In the heart of the sprawling wilderness, where the shadows dance
+            with the light and the whispers of ancient trees echo through the air,
+            lies an enchanted forest unlike any other. Its canopy, adorned with
+            emerald leaves that shimmer in the gentle breeze, casts a spell of
+            wonder upon all who dare to venture within its depths. As the morning
+            sun peeks through the thick foliage, illuminating the forest floor with
+            its golden rays, a symphony of life awakens. Birds sing melodies of joy,
+            while small creatures scurry about, their tiny footprints leaving traces
+            in the dew-kissed grass.The air is alive with the scent of wildflowers
+            and pine, mingling with the earthy aroma of moss-covered stones. Every
+            breath is a treasure, filled with the essence of nature's embrace.
+            Wandering deeper into the forest, one discovers secrets hidden amidst
+            the ancient trees. Each gnarled trunk tells a story of centuries past,
+            whispering tales of magic and mystery. Time seems to stand still in this
+            enchanted realm, where the past and present intertwine in a dance of
+            eternal beauty. Moss-covered pathways wind their way through the
+            undergrowth, leading travelers to hidden glades and sparkling streams.
+            Fairies flit among the ferns, their laughter like tinkling bells that
+            dance upon the wind. The very air thrums with energy, alive with the
+            pulse of the forest's heartbeat.
+        </div>
+    </div>
+
+    <div class="box3">
+        <h1>Welcome To My page</h1>
+    </div>
+
+    <div>
+        <footer>
+            <ul id="fotter">
+                <li class="last">Community</li>
+                <li class="last">Service</li>
+                <li class="last">Help</li>
+                <li class="last">Contact</li>
+            </ul>
+        </footer>
+    </div>
+</body>
+
+</html>
