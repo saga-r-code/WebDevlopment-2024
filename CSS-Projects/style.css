@@ -1,0 +1,151 @@
+ * {
+     margin: 0;
+     padding: 0;
+     font-family: Segoe UI;
+
+ }
+
+ .nav {
+     display: flex;
+     justify-content: space-around;
+     list-style: none;
+
+ }
+
+ .logo img {
+     height: 9vh;
+ }
+
+ .left_side {
+     padding: 20px;
+ }
+
+ .right_side {
+     display: flex;
+     padding: 32px;
+     gap: 50px;
+     cursor: pointer;
+ }
+
+ .body {
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     flex-direction: column;
+ }
+
+ div .big_font {
+     font-size: 48px;
+     padding: 4%;
+ }
+
+ .rating {
+     height: 40px;
+     border-radius: 20%;
+     margin: 0px 23px;
+ }
+
+ div .small_font {
+     font-size: 25px;
+
+ }
+
+ div .download {
+     font-weight: bolder;
+     font-size: large;
+ }
+
+ .download {
+     margin-top: 10%;
+     width: 25vw;
+ }
+
+
+ li img {
+     margin-left: 5px;
+ }
+
+ .logo2 {
+     margin-left: 20px;
+ }
+
+
+ .middle {
+     display: flex;
+     gap: 7px;
+     padding: 40px;
+     margin: auto;
+     max-width: 80vw;
+     align-items: center;
+ }
+
+ .middle img {
+     padding: 10px;
+ }
+
+ .container {
+     display: grid;
+     grid-template-columns: 1fr 1fr 1fr;
+     gap: 20px;
+     max-width: 80vw;
+     margin: auto;
+
+ }
+
+ .item {
+     background-color: rgb(244, 244, 244);
+     text-align: center;
+     justify-content: center;
+     padding: 20px 14px 10px;
+     border-radius: 20px;
+ }
+
+ @media screen and (max-width: 1145px) {
+     .container {
+         grid-template-columns: 1fr;
+         max-width: 45vw;
+         margin: auto;
+     }
+ }
+
+ .container div {
+     font-weight: 750;
+     font-size: larger;
+ }
+
+ .item div:nth-child(2) {
+     font-weight: 400;
+     font-size: smaller;
+ }
+
+ .button {
+     display: flex;
+     padding: 30px;
+     gap: 29px;
+     justify-content: center;
+     align-items: center;
+ }
+
+ .button a{
+    text-decoration: none;
+    color:white;
+ }
+
+
+ button {
+     border-radius: 11px;
+     color: white;
+     font-weight: 650;
+     padding: 12px 10px;
+     margin: 12px 0;
+     cursor: pointer;
+     border: none;
+ }
+
+ button:nth-child(1) {
+     background-color: #00B6D1;
+ }
+
+ button:nth-child(2) {
+     background-color: #5CB85C;
+ }
