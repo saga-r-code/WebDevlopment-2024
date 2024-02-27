@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>bouncing animation</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+
+        .container {
+            background-color: blueviolet;
+            height: 50vh;
+            width: 70vw;
+        }
+
+        .circle {
+            border-radius: 80%;
+            height: 100px;
+            width: 100px;
+            overflow: hidden;
+            background-color: brown;
+            
+            animation: moveY 1s cubic-bezier(1, -0.20, 1, 0.93) infinite alternate;
+
+        }
+
+        @keyframes moveY {
+            from {
+                transform: translateY(0);
+            }
+
+            to {
+                transform: translateY(37vh);
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="circle"></div>
+    </div>
+
+</body>
+
+</html>
