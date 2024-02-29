@@ -14,8 +14,9 @@
 
         .container {
             background-color: blueviolet;
-            height: 50vh;
-            width: 70vw;
+            height: 80vh;
+            width: 100%;
+            position: relative;
         }
 
         .circle {
@@ -25,17 +26,34 @@
             overflow: hidden;
             background-color: brown;
             
-            animation: moveY 1s cubic-bezier(1, -0.20, 1, 0.93) infinite alternate;
+            position:absolute;
+            bottom: 0;
+            left: 0;
+            animation: movex 4s linear infinite, movey 1s ease-out infinite alternate ;
 
         }
 
-        @keyframes moveY {
-            from {
-                transform: translateY(0);
+        @keyframes movex {
+            from{
+                left:0;
+                
             }
+            to{
+                left:100%;
+                
+            }
+        }
 
-            to {
-                transform: translateY(37vh);
+        @keyframes movey {
+            
+            from{
+                bottom:0;
+            
+            }
+            to{
+                bottom: 100%;
+                
+                
             }
         }
     </style>
