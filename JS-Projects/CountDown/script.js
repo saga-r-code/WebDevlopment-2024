@@ -2,7 +2,7 @@ let newWebsite = "New Website Coming Soon....";
 document.getElementById("newWebsite").innerHTML = newWebsite;
 
 let input = document.querySelectorAll("input");
-let endDate = "30 June 2024 11:00 AM";
+let endDate = "30 July 2024 11:00 AM";
 
 const clock = () => {
     const end = new Date(endDate);
