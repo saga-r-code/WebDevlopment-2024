@@ -1,0 +1,47 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color: crimson;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.main{
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px 10px;
+    border-radius: 15px;
+    background-color: white;
+
+}
+body input{
+    border: none;
+    padding: 10px 25px;
+    border-radius: 15px;
+    font-weight:normal;
+    font-size: medium;
+    
+}
+
+input:focus{
+    outline: none;
+}
+
+
+.open-eye{
+    cursor: pointer;
+    display: none;
+   
+}
+.close-eye{
+    cursor: pointer;
+   
+}
