@@ -1,4 +1,4 @@
-const passwordInput = document.body.querySelector(".password");
+const passwordInput = document.body.querySelector(".pass");
 const copy = document.body.querySelector(".copy");
 const generatePassButton = document.body.getElementsByClassName("btn")[0];
 console.log(passwordInput);
@@ -24,17 +24,26 @@ function genpass() {
   }
 
   passwordInput.value = password;
-  console.log(password);
+  copyhandler()
 }
 
-// passwordInput.addEventListener("click", genpass);
+function copyhandler(){
+ if(!passwordInput.value){
+  copy.style.pointerEvents = "none"
+ }
+ else{
+  copy.style.pointerEvents = "auto"
+ }
+}
 
 generatePassButton.addEventListener("click", () => {
   genpass();
-  passwordInput.innerHTML = passwordInput.value
+  
 });
 
 copy.addEventListener("click", () => {
   navigator.clipboard.writeText(passwordInput.value);
   alert("copy successfully");
 });
+
+copyhandler()

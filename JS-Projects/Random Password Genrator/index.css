@@ -31,16 +31,22 @@ h2{
 }
 
 input{
-    padding: 10px 40px ;
+    padding: 10px 40px 10px 25px;
     border-radius: 8px;
     border: none;
     font-size: medium;
     font-weight:normal;
+    box-shadow: -5px 5px 5px rgb(24, 24, 24);
 } 
+
+input:focus{
+    outline: none;
+}
 
 img{
     position: absolute;
     right: 10px;
+    cursor: pointer;
 }
 
 button{

@@ -12,7 +12,7 @@ function handleIcon() {
   else {
     icon.style.pointerEvents = "auto";
     icon.style.opacity = "1";
-
+}
 }
 
 password.addEventListener("input", handleIcon);
@@ -26,4 +26,4 @@ icon.addEventListener("click", () => {
     password.type = "password";
     icon.setAttribute("src", "close.png");
   }
-});
+})
