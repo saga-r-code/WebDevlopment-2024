@@ -23,7 +23,7 @@ h1 {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  padding: 2rem 4rem;
+  padding: 2rem 3.5rem;
   background-color: rgb(216, 208, 208);
   border-radius: 10px;
 }
@@ -31,7 +31,7 @@ h1 {
 input {
   background-color: transparent;
   border: 1px solid gray;
-  padding: 15px 5rem 15px 2rem;
+  padding: 15px 8rem 15px 2rem;
   color: rgb(65, 0, 0);
   font-weight: bolder;
   border-radius: 30px 0px 0px 30px;
@@ -51,16 +51,25 @@ button {
 }
 
 .task-list {
-  margin: 2em 0px;
+  margin: 1.5em 0px;
   position: relative;
 }
 
 .task-list  li {
-  padding: 10px;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  padding:0px 0px 20px 40px;
   list-style: none;
   font-size: large;
   font-weight: 600;
   position: relative;
+  display: flex;
+  justify-content: space-between;
+  cursor: pointer;
+}
+
+
+.task-list li.checked {
+  text-decoration: line-through;
 }
 
 .task-list li::before {
@@ -70,10 +79,17 @@ button {
     border:1px solid #250d0d; 
     border-radius: 50%;
     position: absolute;
-    left: -30px; 
-    top: 50%; 
+    left: 0px; 
+    top: 30%; 
+    cursor: pointer;
     transform: translateY(-50%); 
 }
+
+.task-list li.checked::before{
+  background-color: rgb(96, 0, 0);
+  border: none;
+}
+
 
 
 
