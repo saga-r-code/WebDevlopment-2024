@@ -2,7 +2,7 @@ let newWebsite = "New Website Coming Soon....";
 document.getElementById("newWebsite").innerHTML = newWebsite;
 
 let input = document.querySelectorAll("input");
-let endDate = "30 July 2024 11:00 AM";
+let endDate = "30 July 2024 12:00 AM";
 
 const clock = () => {
     const end = new Date(endDate);
@@ -14,15 +14,17 @@ const clock = () => {
         input[1].value = Math.floor(diff / 3600) % 24; // Hours
         input[2].value = Math.floor(diff / 60) % 60; // Minutes
         input[3].value = Math.floor(diff % 60); // Seconds
+        setInterval(clock, 1000);
     } else {
         input[0].value = 0;
         input[1].value = 0;
         input[2].value = 0;
         input[3].value = 0;
+        clearInterval()
     }
 };
 
-setInterval(clock, 1000);
+
 clock();
 
 
