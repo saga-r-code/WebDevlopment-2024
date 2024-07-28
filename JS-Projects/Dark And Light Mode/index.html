@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      button {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 15vw;
+        height: 8vh;
+        cursor: pointer;
+        background-color: rgb(0, 13, 255);
+        color: wheat;
+        font-size:small;
+        font-weight: bold;
+        border: none;
+        box-shadow: -5px 5px 5px rgb(79, 116, 209);
+      }
+
+      button:hover {
+        background-color: rgb(2, 13, 204);
+      }
+
+      button:active {
+        background-color: rgb(0, 8, 162);
+      }
+
+      /* Media queries for responsiveness */
+
+      /* For small screens (e.g. mobile devices) */
+      @media only screen and (max-width: 600px) {
+        button {
+          width: 30vw;
+          height: 10vh;
+          font-size: small;
+        }
+      }
+
+      /* For medium screens (e.g. tablets) */
+      @media only screen and (min-width: 601px) and (max-width: 992px) {
+        button {
+          width: 20vw;
+          height: 9vh;
+        }
+      }
+
+      /* For large screens (e.g. desktops) */
+      @media only screen and (min-width: 993px) {
+        button {
+          width: 15vw;
+          height: 8vh;
+          font-size: medium;
+        }
+      }
+
+      /* For large screens (e.g. desktops) */
+      @media only screen and (min-width: 1441px) {
+        button {
+          width: 15vw;
+          height: 6vh;
+          font-size: x-large;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="conatiner">
+      <button onclick="ToggleMode()">Dark Mode</button>
+    </div>
+    <script src="index.js"></script>
+  </body>
+</html>
