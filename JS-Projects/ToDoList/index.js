@@ -38,6 +38,7 @@ function SaveData(){
 };
 
 function DispalyTask(){
+  //when refresh the page than  contain are not refresh 
     taskList.innerHTML = localStorage.getItem("todolist-task")
 }
 DispalyTask()

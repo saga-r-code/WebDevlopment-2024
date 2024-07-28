@@ -34,19 +34,23 @@ input {
   padding: 15px 8rem 15px 2rem;
   color: rgb(65, 0, 0);
   font-weight: bolder;
-  border-radius: 30px 0px 0px 30px;
+  border-radius:30px 0px 0px 30px  ;
   position: relative;
 }
 
+.task-box{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 button {
-  position: absolute;
   padding: 16px 1.8rem 16px;
   border-radius: 0px 30px 30px 0px;
   background-color: rgb(45, 29, 29);
   color: wheat;
   border: none;
   font-weight: bold;
-  right: 30px;
   cursor: pointer;
 }
 
@@ -88,6 +92,12 @@ button {
 .task-list li.checked::before{
   background-color: rgb(96, 0, 0);
   border: none;
+}
+
+::selection{
+  background-color: rgb(65, 0, 0);
+  color: wheat;
+
 }
 
 
