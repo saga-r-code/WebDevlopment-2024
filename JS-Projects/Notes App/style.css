@@ -1,0 +1,92 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  height: 100%;
+  width: 100%;
+
+  background: #201e39; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to right,
+    #2a2a67,
+    #1b155e,
+    #2c275c
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to right,
+    #24243e,
+    #302b63,
+    #1f1670
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+.heading {
+  display: flex;
+  align-items: center;
+  margin-top: 5%;
+  margin-left: 8%;
+  gap: 15px;
+  color: wheat;
+  font-weight: bold;
+  font-size: 1.3rem;
+}
+
+.create-note {
+  display: flex;
+  align-items: center;
+  margin-left: 10%;
+  margin-top: 3%;
+  gap: 15px;
+  background: #667db6; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to right,
+    #667db6,
+    #0082c8,
+    #0082c8,
+    #667db6
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #667db6, #0082c8, #0082c8, #667db6);
+  color: white;
+  width: fit-content;
+  padding: 10px 15px;
+  border-radius: 30px;
+  cursor: pointer;
+}
+
+.note-container {
+  width: fit-content;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  margin: 3rem;
+  gap:2rem;
+ 
+}
+
+.input-box {  
+  position: relative;
+  background-color: rgb(220, 255, 253);
+  color: rgb(46, 32, 5);
+  height: 30vh;
+  width: 25vw;
+  outline-color:rgb(0, 0, 0) ;
+  border:3px solid rgb(0, 0, 0);
+  border-radius: 20px;
+  padding: 20px;
+  font-weight: 700;
+  font-size: 1.3rem ;
+  cursor: context-menu;
+}
+
+
+.note-container img{
+  width: 30px;
+  height: 30px;
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+  cursor: pointer;
+}
