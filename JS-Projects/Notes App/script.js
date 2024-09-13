@@ -1,5 +1,6 @@
 // Select elements
-const notesContainer = document.body.getElementsByClassName("note-container")[0];
+const notesContainer =
+  document.body.getElementsByClassName("note-container")[0];
 const notesCreateBtn = document.body.getElementsByClassName("create-note")[0];
 
 //get data from the localstorage
@@ -35,7 +36,7 @@ notesCreateBtn.addEventListener("click", () => {
   deleteImg.src = "delete.png";
   inputBox.appendChild(deleteImg);
   notesContainer.appendChild(inputBox);
-  
+
   //  event listener to the new note
   inputBox.addEventListener("keyup", update);
 

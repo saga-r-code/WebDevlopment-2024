@@ -2,11 +2,12 @@ const input = document.body.getElementsByClassName("qr-input")[0];
 const btn = document.body.getElementsByClassName("qr-btn")[0];
 const img = document.body.getElementsByClassName("qr-img")[0];
 
-btn.addEventListener("click", () => {
+btn.addEventListener("click", (e) => {
+    e.preventDefault()
     const inputvalue = input.value
-    // console.log(inputvalue)
+    console.log(inputvalue)
     if(!inputvalue){
-        alert("Please Enter URL")
+        alert("Please Enter Text ")
         return
     }
     else {
